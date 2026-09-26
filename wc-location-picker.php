@@ -17,7 +17,6 @@
 
 defined('ABSPATH') || exit;
 
-define('WC_LOCATION_PICKER_FILE', __FILE__);
 define('WC_LOCATION_PICKER_PATH', plugin_dir_path(__FILE__));
 define('WC_LOCATION_PICKER_URL', plugin_dir_url(__FILE__));
 

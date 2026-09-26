@@ -1,0 +1,71 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Checkout Location Picker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-26 18:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.8.3\n"
+"X-Domain: wc-location-picker"
+
+#. Description of the plugin
+msgid ""
+"Adds an interactive map location picker to the WooCommerce checkout form, "
+"allowing customers to select their delivery location."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ayoob Zare"
+msgstr ""
+
+#: template/map.php:100
+msgid "Cancel"
+msgstr ""
+
+#: src/Checkout.php:60
+msgid "Click to show map"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://drplugin.ir"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/dr-plugin/wc-location-picker"
+msgstr ""
+
+#: src/Checkout.php:51
+msgid "Location"
+msgstr ""
+
+#: src/Checkout.php:125
+msgid "Location is required."
+msgstr ""
+
+#: src/Admin.php:41
+msgid "Location on map"
+msgstr ""
+
+#: src/Checkout.php:99
+msgid "Map"
+msgstr ""
+
+#: template/map.php:95
+msgid "My location"
+msgstr ""
+
+#: template/map.php:99
+msgid "Save location"
+msgstr ""
+
+#. Name of the plugin
+msgid "WooCommerce Checkout Location Picker"
+msgstr ""

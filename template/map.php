@@ -1,29 +1,45 @@
+<?php
+
+/**
+ * Template for show map
+ * 
+ * @var string $leaflet_css
+ * @var string $leaflet_js
+ */
+
+defined('WC_LOCATION_PICKER_PATH') || exit;
+
+?>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>select map</title>
-    <link rel="stylesheet" href="<?= $leafletCss ?>">
-    <script src="<?= $leafletJs ?>"></script>
+
+    <link rel="stylesheet" href="<?= esc_url($leaflet_css); ?>">
+    <script src="<?= esc_url($leaflet_js); ?>"></script>
+
     <style>
         @media (max-width:550px) {
             .button-wrap {
                 width: 100% !important;
             }
+
             .button-wrap button {
-                flex:1;
+                flex: 1;
             }
         }
 
         body {
             margin: 0;
             padding: 0;
-			box-sizing: border-box
+            box-sizing: border-box
         }
-		*{
-			box-sizing: border-box;
-		}
+
+        * {
+            box-sizing: border-box;
+        }
 
         #jbMap {
             height: 100%;
@@ -38,7 +54,7 @@
             left: 0;
             padding: 5px;
             z-index: 10000;
-			width:200px;
+            width: 200px;
         }
 
         .button-wrap button,
@@ -75,11 +91,15 @@
 
 <body>
     <div id="jbMap"></div>
-    <button id="myLocation">My locaion</button>
+    <button id="myLocation">
+        <?php esc_html_e('My location', 'wc-location-picker'); ?>
+    </button>
+
     <div class="button-wrap">
-        <button id="saveLocation">Save location</button>
-        <button id="cancel">Cancel</button>
+        <button id="saveLocation"><?php esc_html_e('Save location', 'wc-location-picker'); ?></button>
+        <button id="cancel"><?php esc_html_e('Cancel', 'wc-location-picker'); ?></button>
     </div>
+
     <script>
         var marker;
         var myLockBtn = document.getElementById('myLocation');
@@ -107,10 +127,8 @@
         });
         map.addLayer(marker);
 
-
         saveBtn.onclick = function() {
             var latLong = marker.getLatLng();
-
             //send message to parent
             window.parent.postMessage(latLong, "*");
         }

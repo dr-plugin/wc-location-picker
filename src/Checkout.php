@@ -43,6 +43,7 @@ class Checkout
             '1',
             home_url('/')
         );
+
 ?>
 
         <p class="form-row" id="location_field">
@@ -96,7 +97,8 @@ class Checkout
                 src=""
                 data-src="<?php echo esc_url($iframe_url); ?>"
                 title="<?php esc_attr_e('Map', 'wc-location-picker'); ?>"
-                allow="geolocation"></iframe>
+                allow="geolocation">
+            </iframe>
         </div>
 
 <?php
