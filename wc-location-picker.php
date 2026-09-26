@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WooCommerce Checkout Location Picker
+ * Plugin Name: DrPlugin WooCommerce Checkout Location Picker
  * Description: Adds an interactive map location picker to the WooCommerce checkout form, allowing customers to select their delivery location.
  * Version: 1.0.0
  * Plugin URI: https://github.com/dr-plugin/wc-location-picker
