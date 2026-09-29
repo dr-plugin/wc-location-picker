@@ -1,6 +1,6 @@
 <?php
 
-namespace WC_Location_Picker;
+namespace Iran_Map_Field;
 
 defined('ABSPATH') || exit;
 
@@ -31,11 +31,18 @@ class Checkout
     public function field()
     {
         wp_enqueue_script(
-            'wc-location-picker',
-            WC_LOCATION_PICKER_URL . 'assets/js/checkout.js',
+            'iran-map-field',
+            Iran_Map_Field_URL . 'assets/js/checkout.js',
             ['jquery'],
             '1.0.0',
             true
+        );
+
+        wp_enqueue_style(
+            'iran-map-field',
+            Iran_Map_Field_URL . 'assets/css/checkout.css',
+            [],
+            '1.0.0'
         );
 
         $iframe_url = add_query_arg(
@@ -48,7 +55,7 @@ class Checkout
 
         <p class="form-row" id="location_field">
             <label for="location">
-                <?php esc_html_e('Location', 'wc-location-picker'); ?>
+                <?php esc_html_e('Location', 'iran-map-field'); ?>
             </label>
 
             <span class="woocommerce-input-wrapper">
@@ -57,46 +64,17 @@ class Checkout
                     class="input-text"
                     name="location"
                     id="location"
-                    placeholder="<?php esc_attr_e('Click to show map', 'wc-location-picker'); ?>"
+                    placeholder="<?php esc_attr_e('Click to show map', 'iran-map-field'); ?>"
                     value=""
                     readonly>
             </span>
         </p>
 
-        <style>
-            body:has(#mapWrap.show) {
-                overflow: hidden;
-            }
-
-            #mapWrap {
-                display: none;
-                position: fixed;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 1000;
-                justify-content: center;
-                align-items: center;
-                background-color: #6262fd36;
-            }
-
-            #mapWrap.show {
-                display: flex;
-            }
-
-            #mapWrap iframe {
-                width: 750px;
-                height: 500px;
-                max-width: 100%;
-                max-height: 100%;
-            }
-        </style>
-
         <div id="mapWrap">
             <iframe
                 src=""
                 data-src="<?php echo esc_url($iframe_url); ?>"
-                title="<?php esc_attr_e('Map', 'wc-location-picker'); ?>"
+                title="<?php esc_attr_e('Map', 'iran-map-field'); ?>"
                 allow="geolocation">
             </iframe>
         </div>
@@ -122,7 +100,7 @@ class Checkout
         if (empty($_POST['location'])) {
             $errors->add(
                 'validation',
-                __('Location is required.', 'wc-location-picker')
+                __('Location is required.', 'iran-map-field')
             );
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace WC_Location_Picker;
+namespace Iran_Map_Field;
 
 defined('ABSPATH') || exit;
 
@@ -38,7 +38,7 @@ class Admin
         );
 
         echo '<p>';
-        echo '<strong>' . esc_html__('Location on map', 'wc-location-picker') . '</strong><br>';
+        echo '<strong>' . esc_html__('Location on map', 'iran-map-field') . '</strong><br>';
         echo '<a href="' . esc_url($url) . '" target="_blank" rel="noopener">';
         echo esc_html($url);
         echo '</a>';
