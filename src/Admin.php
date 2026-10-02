@@ -38,7 +38,7 @@ class Admin
         );
 
         echo '<p>';
-        echo '<strong>' . esc_html__('Location on map', 'iran-map-field') . '</strong><br>';
+        echo '<strong>' . esc_html__('Location on map', 'ayoob-checkout-location-picker') . '</strong><br>';
         echo '<a href="' . esc_url($url) . '" target="_blank" rel="noopener">';
         echo esc_html($url);
         echo '</a>';

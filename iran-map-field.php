@@ -10,7 +10,7 @@
  * Requires at least: 6.0
  * Requires PHP: 8.0
  * Requires Plugins: woocommerce
- * Text Domain: iran-map-field
+ * Text Domain: ayoob-checkout-location-picker
  * Email: zare2868@gmail.com
  * License: GPL-2.0-or-later
  */

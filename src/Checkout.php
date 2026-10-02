@@ -55,7 +55,7 @@ class Checkout
 
         <p class="form-row" id="location_field">
             <label for="location">
-                <?php esc_html_e('Location', 'iran-map-field'); ?>
+                <?php esc_html_e('Location', 'ayoob-checkout-location-picker'); ?>
             </label>
 
             <span class="woocommerce-input-wrapper">
@@ -64,7 +64,7 @@ class Checkout
                     class="input-text"
                     name="location"
                     id="location"
-                    placeholder="<?php esc_attr_e('Click to show map', 'iran-map-field'); ?>"
+                    placeholder="<?php esc_attr_e('Click to show map', 'ayoob-checkout-location-picker'); ?>"
                     value=""
                     readonly>
             </span>
@@ -74,7 +74,7 @@ class Checkout
             <iframe
                 src=""
                 data-src="<?php echo esc_url($iframe_url); ?>"
-                title="<?php esc_attr_e('Map', 'iran-map-field'); ?>"
+                title="<?php esc_attr_e('Map', 'ayoob-checkout-location-picker'); ?>"
                 allow="geolocation">
             </iframe>
         </div>
@@ -100,7 +100,7 @@ class Checkout
         if (empty($_POST['location'])) {
             $errors->add(
                 'validation',
-                __('Location is required.', 'iran-map-field')
+                __('Location is required.', 'ayoob-checkout-location-picker')
             );
         }
     }

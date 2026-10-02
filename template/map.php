@@ -15,7 +15,7 @@ defined('ABSPATH') || exit;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        <?php esc_html_e('Select Location', 'iran-map-field'); ?>
+        <?php esc_html_e('Select Location', 'ayoob-checkout-location-picker'); ?>
     </title>
 
     <?php wp_head(); ?>
@@ -26,16 +26,16 @@ defined('ABSPATH') || exit;
     <div id="jbMap"></div>
 
     <button id="myLocation">
-        <?php esc_html_e('My location', 'iran-map-field'); ?>
+        <?php esc_html_e('My location', 'ayoob-checkout-location-picker'); ?>
     </button>
 
     <div class="button-wrap">
         <button id="saveLocation">
-            <?php esc_html_e('Save location', 'iran-map-field'); ?>
+            <?php esc_html_e('Save location', 'ayoob-checkout-location-picker'); ?>
         </button>
 
         <button id="cancel">
-            <?php esc_html_e('Cancel', 'iran-map-field'); ?>
+            <?php esc_html_e('Cancel', 'ayoob-checkout-location-picker'); ?>
         </button>
     </div>
 
